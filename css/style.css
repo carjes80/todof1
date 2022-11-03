@@ -60,7 +60,11 @@ nav {
 
 .menu li {
     display: inline-block;
-    padding: 0 2rem;
+    padding: 0;
+}
+.menu ul {
+    display: inline-block;
+    padding: 0;
 }
 
 .menu button {
@@ -136,7 +140,9 @@ nav {
 .piloto_img {
     max-width: 90%;
 }
-
+#datos_pilotos{
+    text-align: left;
+}
 
 
 
