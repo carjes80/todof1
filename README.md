@@ -9,6 +9,8 @@ HTML5, CSS3, JavaScript y la API de RapidApi.
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
 </p>
 
-### El repositorio del equipo se alojó en netlify y se puede navegar con el siguiente link:
+### El repositorio del equipo se alojó en netlify y se podrá navegar con el siguiente link:
 https://todof1.netlify.app/
+
+(en etapa de borrador aún)
 
