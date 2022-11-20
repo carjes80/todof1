@@ -367,21 +367,56 @@ var mostrarPiloto = (piloto) => {
     div01.className = "name";
     div_max_pilotos.appendChild(div01)
     let div02 = document.createElement("ul")
-    div02.id="datos_pilotos"
+    div02.id = "datos_pilotos"
     div_max_pilotos.appendChild(div02)
     let ul_datos = document.getElementById("datos_pilotos")
-    let div03 = document.createElement("li")
-    div03.textContent = `Nacionalidad: ${piloto[0].nationality}`
-    ul_datos.appendChild(div03)
+    if (piloto[0].nationality != null) {
+        let div03 = document.createElement("li")
+        div03.textContent = `Nacionalidad: ${piloto[0].nationality}`
+        ul_datos.appendChild(div03)
+    }
+    if (piloto[0].birthdate != null) {
     let div04 = document.createElement("li")
-    div04.textContent= `Fecha de nacimiento: ${piloto[0].birthdate}`
+    div04.textContent = `Fecha de nacimiento: ${piloto[0].birthdate}`
     ul_datos.appendChild(div04)
+    }
+    if (piloto[0].birthplace != null) {
     let div05 = document.createElement("li")
-    div05.textContent= `Lugar de nacimiento: ${piloto[0].birthplace}`
+    div05.textContent = `Lugar de nacimiento: ${piloto[0].birthplace}`
     ul_datos.appendChild(div05)
+    }
+    if (piloto[0].grands_prix_entered != null) {
     let div06 = document.createElement("li")
-    div06.textContent= `Grandes premios en los que ha participado: ${piloto[0].grands_prix_entered}`
+    div06.textContent = `Grandes premios en los que ha participado: ${piloto[0].grands_prix_entered}`
     ul_datos.appendChild(div06)
+    }
+    if (piloto[0].world_championships != null) {
+        let div07 = document.createElement("li")
+        div07.textContent = `Campeonatos mundiales: ${piloto[0].world_championships}`
+        ul_datos.appendChild(div07)
+        }
+    if (piloto[0].podiums != null) {
+        let div08 = document.createElement("li")
+        div08.textContent = `Podios: ${piloto[0].podiums}`
+        ul_datos.appendChild(div08)
+        }
+    if (piloto[0].highest_race_finish.position != null) {
+        let div09 = document.createElement("li")
+        div09.textContent = `Mejor posición en una carrera: ${piloto[0].highest_race_finish.position} (${piloto[0].highest_race_finish.number})`
+        ul_datos.appendChild(div09)
+        }
+    if (piloto[0].highest_grid_position != null) {
+        let div10 = document.createElement("li")
+        div10.textContent = `Mejor clasificación: ${piloto[0].highest_grid_position}°`
+        ul_datos.appendChild(div10)
+    }
+    let div11 = document.createElement("li")
+    div11.textContent = `Escuderías en los que ha participado:`
+    // for (let i = 0; i < piloto[0].teams.length; i++) {
+    // escuderías= ${piloto[0].highest_grid_position}`
+    // ul_datos.appendChild(div06)
+    // }
+        
 }
 
 function limpiarPantalla() {
